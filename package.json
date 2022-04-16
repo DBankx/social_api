@@ -4,6 +4,7 @@
   "main": "src/app.ts",
   "license": "MIT",
   "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
     "@types/node": "^17.0.24",
     "prisma": "^3.12.0",
     "ts-node-dev": "^1.1.8",
@@ -16,7 +17,10 @@
     "@marblejs/core": "^4.0.3",
     "@marblejs/http": "^4.0.3",
     "@marblejs/middleware-body": "^4.0.3",
+    "@marblejs/middleware-io": "^4.0.3",
     "@marblejs/middleware-logger": "^4.0.3",
+    "@prisma/client": "3.12.0",
+    "bcryptjs": "^2.4.3",
     "fp-ts": "^2.11.10",
     "rxjs": "^7.5.5"
   }
