@@ -1,11 +1,9 @@
 import { r, RouteEffect, HttpError, HttpStatus } from '@marblejs/http';
-import { map, mergeMap, switchMap } from 'rxjs/operators';
-import { TUserDto } from '../dto/signup.dto';
+import { map, mergeMap, switchMap, tap } from 'rxjs/operators';
 import { AuthDao } from '../helpers/auth.dao';
 import signupValidator from '../validators/signup.validator';
 import makeApiResponse from '../../../utils/apiResponse.utils';
 import bcrypt from 'bcryptjs';
-import { User } from '@prisma/client';
 import { throwError } from 'rxjs';
 
 const signup$: RouteEffect = r.pipe(

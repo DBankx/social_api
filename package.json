@@ -18,6 +18,7 @@
     "@marblejs/http": "^4.0.3",
     "@marblejs/middleware-body": "^4.0.3",
     "@marblejs/middleware-io": "^4.0.3",
+    "@marblejs/middleware-jwt": "^3.5.2",
     "@marblejs/middleware-logger": "^4.0.3",
     "@prisma/client": "3.12.0",
     "bcryptjs": "^2.4.3",
