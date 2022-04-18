@@ -23,4 +23,17 @@ model User {
 	createdAt DateTime @default(now()) @map("created_at")
 	updatedAt DateTime @updatedAt @map("updated_at")
 	emailConfirmed Boolean @default(false) @map("email_confirmed")
+	posts 	  Post[]
+}
+
+model Post {
+	@@map(name: "posts")
+	id 	  Int     @id @default(autoincrement())
+	uuid  String  @default(uuid()) @unique
+	title String
+	body  String
+	user  User    @relation(fields: [userId], references: [id])
+	userId Int     
+	createdAt DateTime @default(now()) @map("created_at")
+	updatedAt DateTime @updatedAt @map("updated_at")
 }
